@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suchul`s Portfolio</title>
+    <meta name="description" content="Portfolio for world-renowmed software engineer Suchul">
+    <meta name="author" content="Suchul">
+    <!-- rel 속성은 링크 자원과 현재 문서 사이에 관계를 정의한다-->
+    <!-- preconnect 사용자 에이전트가 대상 리소스의 오리진에 선제 적으려 연결하도록 지정-->
+    
+    <link rel="icon" type="image/png" href="imgs/apple-brands.png"/>
+    <script src="https://kit.fontawesome.com/4334eb2f36.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- defer 속성은 페이지가 모두 로드된 후에 해당 외부 스크립트가 실행됨을 명시-->
+    <!--하이-->
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="navbar__log">
+            <img src="imgs/apple-brands.png" alt="수철" width="15px" height="15px">
+            <a href="#">Suchul</a>
+        </div>
+            <ul class="navbar__menu">
+                <li class="navbar__menu__item active">Home</li>
+                <li class="navbar__menu__item">About</li>
+                <li class="navbar__menu__item">Skills</li>
+                <li class="navbar__menu__item">My work</li>
+                <li class="navbar__menu__item">Testimonial</li>
+                <li class="navbar__menu__item">Contact</li>
+                <li class="navbar__menu__item">Contact</li>
+            </ul>
+    </nav>
+    <!-- Home -->
+     <section id="home">
+         <img src="imgs/friend.jpg" alt="Su chul Portfolio" class="home__avatar">
+         <h1 class="home__title"> <br />Hello, I'm Dream Coder</h1>
+         <h2 class="home__descrotion">I have come to end this war</h2>
+         <button class="home__contact">Contact Me</button>
+     </section>
+    <!-- About -->
+    <section id="about">
+        <h1>About Me</h1>
+        <p>I've been in software for 4 years and I'm interested in back-end and I know how to do front-end to some extent.</p>
+        <div class="about__majors">
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-react"></i>
+                </div>
+                <div class="major__title"><b>Front-end</b></div>
+                <div class="major__description">
+                    HTML , CSS , JavaScript
+                </div>
+            </div>
+        <div class="major">
+            <div class="major__icon">
+                <i class="fab fa-css3-alt"></i>
+            </div>
+            <div class="major__title"><b>CSS</b></div>
+            <div class="major__description">
+                CSS
+            </div>
+        </div>
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fab fa-java"></i>
+                </div>
+                <div class="major__title"><b>Back-end</b></div>
+                <div class="major__description">
+                    JAVA , JavaScript , Spring
+                </div>
+        </div>
+    </div>
+    <div class="about__jobs">
+        <div class="job">
+            <img src="imgs/jobs/yensung.jpg" alt="yensung" class="job_logo">
+            <p class="job__name">
+                I graduated from Yonsei University.
+            </p>
+            <p class="job__period">
+                Enrolled in 2017 and graduated in 2023
+            </p>
+        </div>
+        <div class="job"></div>
+    </div>
+
+    </section>
+    <!-- skills -->
+    <section id="skills">
+        <h1>Skills</h1>
+        <h2>Skills & Attributes</h2>
+        <p>
+            Experience with all phases of the software life - cycle
+        </p>
+        <div class="skillset">
+            <div class="skillset__left">
+                <h3 class="skillset__title">Skills</h3>
+                <div class="skill">
+                    <div class="skill_description">
+                        <span>HTML</span>
+                        <span>99%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skillset__right">
+                <div class="tools">
+                    <h3 class="skillset__title">Tools</h3>
+                    <ul class="tools__list">
+                        <li><span>Visual Studio Code</span></li>
+                        <li><span>Eclipse</span></li>
+                        <li><span>Android Studio Code</span></li>
+                        <li><span>IntelliJ IDEA</span></li>
+                        <li><span>Visual Studio</span></li>
+                </div>
+                <div class="etc">
+                    <h3 class="skillset__title">Etc</h3>
+                    <ul class="etc__list">
+                        <li><span>Git</span></li>
+                        <li><span>Scrum master</span></li>
+                        <li><span>Meth</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Work -->
+    <section id="work">
+        <h1>My work</h1>
+        <h3>Projects</h3>
+        <div class="work__categories">
+            <button class="categories__btn">All<span class="category__count">8</span></button>
+            <button class="categories__btn">Front-end<span class="category__count">3</span></button>
+            <button class="categories__btn">Back-end<span class="category__count">3</span></button>
+            <button class="categories__btn">Mobile<span class="category__count">2</span></button>
+        </div>
+
+        <div class="work__projects">
+            <a href="https://github.com/suchulchoi/Portfolio" class="project" target="blank">
+                <img class="project__img" src="imgs/projects/project1.png" alt="유튜브">
+                <div class="project__description">
+                    <h3>Youtue Site</h3>
+                    <span>Clone coding with HTML and CSS</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="work__projects">
+            <a href="https://github.com/suchulchoi/Portfolio" class="project" target="blank">
+                <img class="project__img" src="imgs/projects/project2.png" alt="사진2">
+                <div class="project__description">
+                    <h3>Responsive Navbar</h3>
+                    <span>HTML , CSS with media query</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="work__projects">
+            <a href="https://github.com/suchulchoi/Portfolio" class="project" target="blank">
+                <img class="project__img" src="imgs/projects/project3.png" alt="사진3">
+                <div class="project__description">
+                    <h3>Shopping mall game</h3>
+                    <span>HTML , CSS , JavaScript , Json</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="work__projects">
+            <a href="https://github.com/suchulchoi/Portfolio" class="project" target="blank">
+                <img class="project__img" src="imgs/projects/project4.png" alt="사진4">
+                <div class="project__description">
+                    <h3>project</h3>
+                    <span>Explanation</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="work__projects">
+            <a href="https://github.com/suchulchoi/Portfolio" class="project" target="blank">
+                <img class="project__img" src="imgs/projects/project5.png" alt="사진5">
+                <div class="project__description">
+                    <h3>project</h3>
+                    <span>Explanation</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="work__projects">
+            <a href="https://github.com/suchulchoi/Portfolio" class="project" target="blank">
+                <img class="project__img" src="imgs/projects/project6.png" alt="사진6">
+                <div class="project__description">
+                    <h3>project</h3>
+                    <span>Explanation</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="work__projects">
+            <a href="https://github.com/suchulchoi/Portfolio" class="project" target="blank">
+                <img class="project__img" src="imgs/projects/project7.png" alt="사진7">
+                <div class="project__description">
+                    <h3>project</h3>
+                    <span>Explanation</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="work__projects">
+            <a href="https://github.com/suchulchoi/Portfolio" class="project" target="blank">
+                <img class="project__img" src="imgs/projects/project8.png" alt="사진8">
+                <div class="project__description">
+                    <h3>project</h3>
+                    <span>Explanation</span>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <h1>Testimonials</h1>
+        <h3>See what they say about me</h3>
+        <div class="testimonials">
+            <div class="testimonial">
+                <img src="/imgs/jobs/yensung.jpg" alt="연성" class="testimonial__avatar" width="100px" height="100px">
+                <div class="testimonial__speech-bubble">
+                    <p>
+                        이봐,사람이 언제 죽는다고 생각하나? 심장이 총알에 뚫렸을 때? 아니야,불치의 병에 걸렸을 때?
+                        아니지! 맹독 버섯 스프를 마셨을 때? 아니야!! 사람들에게, 잊혀질 때다
+                    </p>
+                    <p class="name"><a href="">Suchul</a>/ Yensung</p>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <img src="/imgs/jobs/yensung.jpg" alt="연성" class="testimonial__avatar" width="100px" height="100px">
+                <div class="testimonial__speech-bubble">
+                    <p>
+                        남자에겐 절대로 싸움을 피해선 안 될 순간이 있다. 그건 동료의 꿈이 비웃음 당했을 때야!
+                    </p>
+                    <p class="name"><a href="">Suchul</a>/ Yensung</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact">
+        <h1 class="contact__title">Let`s talk</h1>
+        <h2 class="contact__email">tncjf856@naver.com</h2>
+        <div class="contact__links">
+            <a href="https://github.com/suchulchoi/Portfolio" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fa fa-linkedin-square"></i>
+            </a>
+        </div>
+        <p class="contact__rights">2022 Dream Coding Suchul - All rights reserved</p>
+    </section>
+</body>
+</html>
